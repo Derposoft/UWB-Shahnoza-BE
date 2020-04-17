@@ -1,5 +1,4 @@
 // imports
-import('./src/imgParsing.js')
 const express = require('express')
 const fs = require('fs')
 const app = express()
@@ -7,25 +6,19 @@ const port = 3000 //devel port
 
 app.route(express.static('views'))
 
-app.get('/upload', (req, res) => {
+app.post('/upload', (req, res) => {
+    // save request image
     var body = ''
-    filePath = __dirname + '/public/data.txt'
-    request.on('data', function (data) {
-        body += data
-    });
-
-    request.on('end', function () {
-        fs.appendFile(filePath, body, function () {
-            respond.end()
-        })
-    })
-    // imageInformation: [[o1name, o1x, o1y], [o2name, o2x, o2y], ...]
-    var imageInformation = getImageInfo(req)
-    // imagePrices: [[o1name, o1x, o1y, o1price], [o2name, o2x, o2y, o2price], ...]
-    var imagePrices = getImagePrices(imageInformation)
+    req.on('data', data => {body += data})
+    filePath = __dirname + '/temp/tempimg'
+    req.on('end', () => fs.appendFile(filePath, body, () => res.end()))
+    // get image inference
+    var imageInformation = imgParser.getImageInfo(filepath)
+    // get pricelist
+    //var imagePrices = getImagePrices(imageInformation)
     // build response
     // (dummy response)
-    res.send('you have called the image upload api endpoint!')
+    res.send(JSON.stringify(imageInformation))
 })
 
 app.listen(port, () => {
