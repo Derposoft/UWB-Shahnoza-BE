@@ -1,24 +1,28 @@
 // imports
 const express = require('express')
 const fs = require('fs')
+const vision = require('@google-cloud/vision')
 const app = express()
 const port = 3000 //devel port
 
 app.route(express.static('views'))
+app.use(express.urlencoded())
+
+async function infer(fileName, callback) {
+    const client = new vision.ImageAnnotatorClient()
+    // Detect similar images on the web to a local file
+    const [result] = await client.webDetection(fileName)
+    callback(result)
+}
 
 app.post('/upload', (req, res) => {
-    // save request image
-    var body = ''
-    req.on('data', data => {body += data})
-    filePath = __dirname + '/temp/tempimg'
-    req.on('end', () => fs.appendFile(filePath, body, () => res.end()))
+    var imgdata = req.body.image
+    var filepath = __dirname + '/temp/' + req.body.name
+    fs.appendFile(filepath, imgdata, () => res.end())
+    // result sender
+    var sendres = result => res.send(JSON.stringify(result))
     // get image inference
-    var imageInformation = imgParser.getImageInfo(filepath)
-    // get pricelist
-    //var imagePrices = getImagePrices(imageInformation)
-    // build response
-    // (dummy response)
-    res.send(JSON.stringify(imageInformation))
+    infer(filepath, sendres)
 })
 
 app.listen(port, () => {
