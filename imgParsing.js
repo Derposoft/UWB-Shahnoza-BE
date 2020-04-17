@@ -11,6 +11,3 @@ async function infer(fn) {
 var getImageInfo = async (fn) => {
     infer(fn).catch(err => console.log(err))
 }
-var getImagePrices = (imgInfo) => {
-
-}
