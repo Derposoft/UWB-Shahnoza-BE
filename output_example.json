@@ -1,0 +1,336 @@
+{
+    "webEntities": [
+        {
+            "entityId": "/m/02wjlx",
+            "score": 0.7307000160217285,
+            "description": "Kawai Musical Instruments"
+        },
+        {
+            "entityId": "/m/05r5c",
+            "score": 0.7218000292778015,
+            "description": "Piano"
+        },
+        {
+            "entityId": "/g/11flb70lpq",
+            "score": 0.7128000259399414,
+            "description": "Kawai GX-1 Polished Ebony Grand Piano"
+        },
+        {
+            "entityId": "/g/1229cmth",
+            "score": 0.7117000222206116,
+            "description": "Grand piano"
+        },
+        {
+            "entityId": "/g/121vx27r",
+            "score": 0.7062000036239624,
+            "description": "Upright piano"
+        },
+        {
+            "entityId": "/g/11jfgfxmj0",
+            "score": 0.7053999900817871,
+            "description": "Kawai GX-5 Grand Piano"
+        },
+        {
+            "entityId": "/m/042v_gx",
+            "score": 0.538100004196167,
+            "description": "Acoustic guitar"
+        },
+        {
+            "entityId": "/m/01svrg",
+            "score": 0.4860999882221222,
+            "description": "Yamaha Corporation"
+        },
+        {
+            "entityId": "/m/01pmyz",
+            "score": 0.4675999879837036,
+            "description": "Digital piano"
+        },
+        {
+            "entityId": "/m/05148p4",
+            "score": 0.43790000677108765,
+            "description": "Keyboard"
+        }
+    ],
+    "fullMatchingImages": [
+        {
+            "url": "https://www.demmer-piano.de/media/image/da/14/c9/kawai-fluegel-gl10.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://piano.dk/wp-content/uploads/2018/11/GL30_ATX2.jpg",
+            "score": 0
+        },
+        {
+            "url": "http://bilbaotrading.com/wp-content/uploads/2016/05/GL10_RGB_styling.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://www.demmer-piano.de/media/image/8c/6e/45/kawai-gl-10atx2.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://i1.wp.com/kawaispain.com/wp-content/uploads/2019/03/GL30_RGB_styling.jpg?fit=3246%2C3750",
+            "score": 0
+        },
+        {
+            "url": "https://i0.wp.com/bilbaotrading.com/wp-content/uploads/2016/05/GL10_RGB_styling.jpg?fit=3006%2C3762",
+            "score": 0
+        },
+        {
+            "url": "https://ritmullerusa.com/wp-content/uploads/2016/07/GH160R.jpg",
+            "score": 0
+        },
+        {
+            "url": "http://pianoplanethawaii.com//wp-content/uploads/2016/04/GM10-12.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://pearlriverusa.com//wp-content/uploads/2018/03/GP160.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://www.ferrarinpianoforti.it/wp-content/uploads/2018/11/GL30.jpg",
+            "score": 0
+        }
+    ],
+    "partialMatchingImages": [
+        {
+            "url": "https://images-na.ssl-images-amazon.com/images/I/71LBKFZ1kDL._SL1500_.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://imgur.com/Pi5men1.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://stollas.com/media/product/cee/kawai-b72.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://i.redd.it/0c9de3gv4pq31.jpg",
+            "score": 0
+        },
+        {
+            "url": "http://bbs.popiano.org/attachments/month_1103/neorx2_obOlfAjal9j7.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://electromusica.pt/storage/2015/05/piano-acustico-cauda-kawai-gx-5-ep.jpg",
+            "score": 0
+        },
+        {
+            "url": "http://www.knpiano.com/shop/data/goods/1491893115234s0.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://stollas.com/media/catalog/product/g/e/ge20.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://f0.pngfuel.com/png/508/1007/kawai-musical-instruments-grand-piano-pianist-piano-png-clip-art.png",
+            "score": 0
+        },
+        {
+            "url": "https://b7.pngbarn.com/png/653/249/guangzhou-pearl-river-piano-group-co-ltd-grand-piano-yamaha-corporation-musical-instruments-piano-png-clip-art.png",
+            "score": 0
+        }
+    ],
+    "pagesWithMatchingImages": [
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://kawaius.com/wp-content/uploads/2018/05/GM-11-Grand-Piano.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://kawaius.com/product/gm-11/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> GM11 Baby <b>Grand Piano</b> | <b>Kawai</b> GM Series"
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://kawaius.com/wp-content/uploads/2018/05/GM-12.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://kawaius.com/product/gm-12/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> GM-12 Baby <b>Grand Piano</b> | <b>Kawai</b> GM Series"
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://kawaius.com/wp-content/uploads/2018/04/GX-5-Polished-Ebony.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://kawaius.com/product/gx-5/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> GX-5 BLAK Chamber <b>Grand Piano</b> | <b>Kawai</b> GX BLAK Series"
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://kawaius.com/wp-content/uploads/2018/05/GE-30-Grand-Piano.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://kawaius.com/product/ge-30/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> GE-30 Baby <b>Grand Piano</b> | <b>Kawai</b> GE Series"
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://www.chuppspianos.com/wp-content/uploads/2016/08/Kawai-GL-50-Classic-Grand-Piano.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://www.chuppspianos.com/kawai-vs-yamaha-pianos-blog/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> vs. Yamaha <b>Pianos</b> | An Ongoing Debate - Chupp&#39;s <b>Piano</b> ..."
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://cdn.merriammusic.com/2017/02/Kawai-GL20-800x800.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://cdn.merriammusic.com/2017/02/Kawai-GX1-800x800.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://cdn.merriammusic.com/2017/02/Kawai-GX5-800x800.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://cdn.merriammusic.com/2017/02/Kawai-GL50-800x800.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://cdn.merriammusic.com/2017/02/Kawai-GL30-800x800.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://www.merriammusic.com/pianos/acoustic-pianos/kawai-pianos/",
+            "score": 0,
+            "pageTitle": "<b>Kawai Pianos</b> - Japan&#39;s Most Advanced <b>Piano</b> - Only At Merriam ..."
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://cdn.merriammusic.com/2017/01/Shigeru-Kawai-SK5-800x800.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://www.merriammusic.com/pianos/acoustic-pianos/shigeru-kawai/",
+            "score": 0,
+            "pageTitle": "Shigeru <b>Kawai</b> THE BEST PRICES AND SELECTION IN CANADA ..."
+        },
+        {
+            "fullMatchingImages": [],
+            "partialMatchingImages": [
+                {
+                    "url": "https://img.klaviano.com/files/05-2019/ad414023/thumb_1558284537315221285.jpg",
+                    "score": 0
+                }
+            ],
+            "url": "https://www.klaviano.com/pianos-for-sale/kawai/gx2.html",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> Model GX-2 - Used and new <b>pianos</b> for sale | all models and ..."
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://cdn.merriammusic.com/2017/02/Kawai-GL20-1600x1600.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://www.merriammusic.com/blog/pianos-blog/piano-reviews/kawai-gl20-review/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> GL-20 <b>Grand Piano</b> Review &amp; Demo | <b>Kawai</b> GL Series"
+        },
+        {
+            "fullMatchingImages": [
+                {
+                    "url": "https://www.chuppspianos.com/wp-content/uploads/2016/08/Kawai-GL-20-Classic-Baby-Grand-Piano.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://www.chuppspianos.com/wp-content/uploads/2016/08/Kawai-GL-50-Classic-Grand-Piano.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://www.chuppspianos.com/wp-content/uploads/2016/08/Kawai-GL-30-Classic-Grand-Piano.jpg",
+                    "score": 0
+                },
+                {
+                    "url": "https://www.chuppspianos.com/wp-content/uploads/2016/08/Kawai-GL-10-Classic-Baby-Grand-Piano.jpg",
+                    "score": 0
+                }
+            ],
+            "partialMatchingImages": [],
+            "url": "https://www.chuppspianos.com/kawai-pianos/kawai-gl-series-grand-pianos/",
+            "score": 0,
+            "pageTitle": "<b>Kawai</b> GL-Series Classic <b>Grand Pianos</b> for Sale | Chupp&#39;s Piano ..."
+        }
+    ],
+    "visuallySimilarImages": [
+        {
+            "url": "https://kawaius.com/wp-content/uploads/2018/06/Kawai-RX-1-Grand-Piano.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://cdn.shopify.com/s/files/1/1174/3976/products/kawai-gx-1-grand-piano-p25546-38322_image_large.jpg?v=1571438967",
+            "score": 0
+        },
+        {
+            "url": "https://stollas.com/media/product/f93/kawai-f58.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://kawaius.com/wp-content/uploads/2018/06/Kawai-RX-7-Grand-Piano-300x300.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://p.kindpng.com/picc/s/546-5464708_transparent-pianos-concert-grand-grand-piano-kawai-hd.png",
+            "score": 0
+        },
+        {
+            "url": "https://pianopricepoint.com/wp-content/uploads/2017/06/Shigeru-Kawai-EX.jpg",
+            "score": 0
+        },
+        {
+            "url": "http://www.wspianos.co.za/wp-content/uploads/2019/03/Grand-Piano-Kawai-GX3-NEW-Serial-tbc-R-000-000-300x300.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://musician.ua/uploads/shop/products/large/fc88660822aeabc0cc97e82948b78526.jpg",
+            "score": 0
+        },
+        {
+            "url": "https://i.dlpng.com/static/png/3999730-kawai-musical-instruments-grand-piano-action-piano-png-download-grand-piano-png-900_640_preview.webp",
+            "score": 0
+        },
+        {
+            "url": "https://www.nicepng.com/png/detail/311-3117940_acoustic-piano-kawai-grand-piano-gx2.png",
+            "score": 0
+        }
+    ],
+    "bestGuessLabels": [
+        {
+            "label": "grand piano kawai",
+            "languageCode": "en"
+        }
+    ]
+}
