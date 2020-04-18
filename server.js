@@ -16,7 +16,7 @@ const upload = multer({ dest: "./temp/" })
 
 // parse application/json, application/x-www-form-urlencoded
 //app.use(cors())
-server.use(function (req, res, next) {
+app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
     res.header('Access-Control-Allow-Credentials', true)
     res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
