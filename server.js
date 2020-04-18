@@ -5,8 +5,9 @@ const multer = require('multer')
 const path = require('path')
 const bodyParser = require('body-parser')
 const vision = require('@google-cloud/vision')
+//const cors = require('cors')
 const app = express()
-const port = 3000 //devel port
+const port = 8081 //devel port
 
 const handleError = (err, res) => {
     res.status(500).contentType("text/plain").end("Oops! Something went wrong!")
@@ -14,9 +15,18 @@ const handleError = (err, res) => {
 const upload = multer({ dest: "./temp/" })
 
 // parse application/json, application/x-www-form-urlencoded
+//app.use(cors())
+server.use(function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Credentials', true)
+    res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+    next()
+})
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.get("/", express.static(path.join(__dirname, "./views")));
+app.use(express.static('./views'))
+//app.get("/", express.static(path.join(__dirname, "./views")));
 
 async function infer(fileName, callback) {
     const client = new vision.ImageAnnotatorClient()
@@ -27,11 +37,11 @@ async function infer(fileName, callback) {
 var pricefetch = (result) => {
     // build url from which to scrape
     var query = ""
-    var entities = Object.keys(result.webEntities)
+    var entities =result.webEntities
     if (entities.length == 0)
         sendback("image match not found", 500)
         
-    for (var key in Object.keys(webEntities))
+    for (var i = 0; i < entities.length; i++)
         query += entities[key] + " "
     // remove final space
     query = query.substr(0, query.length - 1)
@@ -39,7 +49,7 @@ var pricefetch = (result) => {
     // get back html for the site
     
     // call final callback
-    sendres(out, 200)
+    sendres(JSON.stringify(result), 200)
 }
 
 // callback to send result
