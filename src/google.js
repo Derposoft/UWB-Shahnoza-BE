@@ -18,5 +18,9 @@ async function urlData(url) {
     return reqData
 }
 
-const myurl = "https://www.google.com/search?q=Bass+guitar+Electric+guitar+Acoustic+Guitar+Slide+guitar+Cuatro+Acoustic-electric+guitar+Tiple+Guitar+/m/083vt+Double+bass+Wood+steel-string+acoustic+guitar&sxsrf=ALeKk015ZqfOrkZQveUZPM3t1du9qsSQrg:1587172418214&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiX-byB5vDoAhXJup4KHT8sBfIQ_AUoAXoECAsQAw&biw=1920&bih=977"
-var out = urlData(myurl).then(res => console.log(res))
+const searchUrl = "https://www.google.com/search?psb=1&tbm=shop&q="
+var amazonResults = async query => {
+    return await urlData(searchUrl + query)
+}
+
+//var out = urlData(myurl).then(res => console.log(res))
