@@ -31,6 +31,7 @@ var parseHtml = (html) => {
         .each((i, element) => {
             var validityTester = element.parent.parent.parent.parent.children.length
             if (validityTester == 13) {
+                console.log("HIT")
                 try {
                     names.push(element.children[0].data)
                     urls.push(domain + element.parent.attribs.href)
@@ -56,11 +57,14 @@ var parseHtml = (html) => {
             imgsrc: imgs[i]
         })
     }
-    //console.log(out)
+    console.log(out)
+
+    //console.log(html)
     return out
 }
 
 var amazonResults = async query => {
+    console.log(searchUrl + query)
     return await axios.get(searchUrl + query, config).then(resp => parseHtml(resp.data))
 }
 

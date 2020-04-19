@@ -7,14 +7,12 @@ const bodyParser = require('body-parser')
 const vision = require('@google-cloud/vision')
 const googleSearcher = require('./src/google')
 const amazonSearcher = require('./src/amazon')
-//const cors = require('cors')
 const app = express()
-const port = 8081 //devel port
+const port = 80 //devel port
 
 const upload = multer({ dest: "./temp/" })
 
 // parse application/json, application/x-www-form-urlencoded
-//app.use(cors())
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
     res.header('Access-Control-Allow-Credentials', true)
@@ -46,10 +44,12 @@ var pricefetch = async (res, result) => {
     query = query.substr(0, query.length - 1)
     // get data from sites
     var googleHits = await googleSearcher.googleResults(query)
-    var amazonHits = await amazonSearcher.amazonResults(query)
-    var output = googleHits.concat(amazonHits)
+    //var amazonHits = await amazonSearcher.amazonResults(entities[0].description)
+    /*var output;// = googleHits
+    for (var i = 0; i < amazonHits.length; i++)
+        output.push(amazonHits[i])*/
     // call final callback
-    sendres(res, output, 200)
+    sendres(res, googleHits, 200)
 }
 
 // callback to send result
