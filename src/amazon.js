@@ -14,10 +14,6 @@ var config = {
     }
 }
 
-var amazonResults = async query => {
-    return await axios.get(searchUrl + query, config).then(resp => parseHtml(resp.data))
-}
-
 var parseHtml = (html) => {
     const $ = cheerio.load(html)
 
@@ -63,3 +59,9 @@ var parseHtml = (html) => {
     //console.log(out)
     return out
 }
+
+var amazonResults = async query => {
+    return await axios.get(searchUrl + query, config).then(resp => parseHtml(resp.data))
+}
+
+exports.amazonResults = amazonResults

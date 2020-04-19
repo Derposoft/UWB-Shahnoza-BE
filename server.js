@@ -5,6 +5,8 @@ const multer = require('multer')
 const path = require('path')
 const bodyParser = require('body-parser')
 const vision = require('@google-cloud/vision')
+const googleSearcher = require('./src/google')
+const amazonSearcher = require('./src/amazon')
 //const cors = require('cors')
 const app = express()
 const port = 8081 //devel port
@@ -31,7 +33,7 @@ async function infer(res, fileName, callback) {
     const [result] = await client.webDetection(fileName)
     callback(res, result)
 }
-var pricefetch = (res, result) => {
+var pricefetch = async (res, result) => {
     // build url from which to scrape
     var query = ""
     var entities = result.webDetection.webEntities
@@ -42,11 +44,12 @@ var pricefetch = (res, result) => {
         query += entities[i].description + " "
     // remove final space
     query = query.substr(0, query.length - 1)
-    var url = "https://www.google.com/search?psb=1&tbm=shop&q=" + query
-    // get back html for the site
-    
+    // get data from sites
+    var googleHits = await googleSearcher.googleResults(query)
+    var amazonHits = await amazonSearcher.amazonResults(query)
+    var output = googleHits.concat(amazonHits)
     // call final callback
-    sendres(res, result, 200)
+    sendres(res, output, 200)
 }
 
 // callback to send result
@@ -58,11 +61,8 @@ var sendres = (res, json, status) => {
 app.post('/upload',
     upload.single("image"),
     (req, res, next) => {
-        console.log("FILE:" + req.file)
-        console.log("FNAME:" + req.body.name)
-        fs.renameSync(req.file.path, path.join(__dirname + '/temp', req.body.name))
-
-        const filepath = path.join(__dirname, "./temp/" + req.body.name)
+        fs.renameSync(req.file.path, path.join(__dirname + '/temp', req.file.originalname))
+        const filepath = path.join(__dirname, "./temp/" + req.file.originalname)
         // get image inference
         infer(res, filepath, pricefetch, sendres)
     }

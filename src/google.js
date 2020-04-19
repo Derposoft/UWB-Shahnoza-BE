@@ -19,8 +19,8 @@ async function urlData(url) {
 }
 
 const searchUrl = "https://www.google.com/search?psb=1&tbm=shop&q="
-var amazonResults = async query => {
+var googleResults = async query => {
     return await urlData(searchUrl + query)
 }
 
-//var out = urlData(myurl).then(res => console.log(res))
+exports.googleResults = googleResults
